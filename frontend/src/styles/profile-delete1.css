@@ -1,0 +1,68 @@
+/* Scoped Delete Profile Page Styling */
+.profile-delete-wrapper {
+  background-color: #FF8C42;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.profile-delete-wrapper .container {
+  background-color: #D9534F;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 400px;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile-delete-wrapper .container h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.profile-delete-wrapper .container p {
+  font-size: 16px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.profile-delete-wrapper .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  margin-top: 10px;
+  border: none;
+}
+
+.profile-delete-wrapper .btn.delete {
+  background-color: #333;
+  color: white;
+}
+
+.profile-delete-wrapper .btn.delete:hover {
+  background-color: #111;
+}
+
+.profile-delete-wrapper .btn.cancel {
+  background-color: #FFC074;
+  color: white;
+}
+
+.profile-delete-wrapper .btn.cancel:hover {
+  background-color: #FFA549;
+}

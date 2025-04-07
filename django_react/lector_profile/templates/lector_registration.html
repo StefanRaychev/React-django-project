@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="{% static 'style/registration1.css' %}">
+</head>
+<body>
+    <div class="registration-container">
+        <div class="registration-box">
+            <h2 class="registration-title">LECTOR REGISTRATION FORM</h2>
+
+            <form method="post" action="{% url 'lector-register' %}">
+                {% csrf_token %}
+
+                <!-- Display global form errors -->
+                {% if form.errors %}
+                    <div class="alert alert-danger">
+                        <strong>Error:</strong> Please correct the following:
+                        <ul>
+                            {% for field, errors in form.errors.items %}
+                                {% for error in errors %}
+                                    <li>{{ field|title }}: {{ error }}</li>
+                                {% endfor %}
+                            {% endfor %}
+                        </ul>
+                    </div>
+                {% endif %}
+
+                <!-- Username field with errors -->
+                <input type="text" name="username" placeholder="USERNAME" class="registration-input" value="{{ form.username.value|default:'' }}" required>
+                {% if form.username.errors %}
+                    <span class="error-message">{{ form.username.errors.0 }}</span>
+                {% endif %}
+
+                <!-- Email field with errors -->
+                <input type="email" name="email" placeholder="EMAIL" class="registration-input" value="{{ form.email.value|default:'' }}" required>
+                {% if form.email.errors %}
+                    <span class="error-message">{{ form.email.errors.0 }}</span>
+                {% endif %}
+
+                <!-- Password1 field with errors -->
+                <input type="password" name="password1" placeholder="PASSWORD" class="registration-input" required>
+                {% if form.password1.errors %}
+                    <span class="error-message">{{ form.password1.errors.0 }}</span>
+                {% endif %}
+
+                <!-- Password2 field with errors -->
+                <input type="password" name="password2" placeholder="CONFIRM PASSWORD" class="registration-input" required>
+                {% if form.password2.errors %}
+                    <span class="error-message">{{ form.password2.errors.0 }}</span>
+                {% endif %}
+
+                <div class="registration-actions">
+                    <button type="submit" class="register-button">Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,122 @@
+/* LectorDashboardWrapper.css */
+.lector-dashboard-wrapper {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FF8C42; /* Bright orange background */
+    color: #333;
+    min-height: 100vh;
+        width: 100vw;}          /* ✅ Fill full width */
+
+.lector-dashboard-wrapper .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #D9534F; /* Match exact red */
+  color: white;
+  width: 100vw;
+}
+
+.lector-dashboard-wrapper .nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  align-items: center;
+      padding: 1px 10px;
+
+}
+
+.lector-dashboard-wrapper .nav-links li {
+  display: inline; /* ✅ This was missing */
+}
+
+.lector-dashboard-wrapper .nav-links a,
+.lector-dashboard-wrapper .nav-link-button {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px; /* ✅ Match the font size from dashboard2 */
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.lector-dashboard-wrapper .nav-links a:hover,
+.lector-dashboard-wrapper .nav-link-button:hover {
+  text-decoration: underline;
+}
+
+.lector-dashboard-wrapper .user-info {
+  font-weight: bold;
+  font-size: 16px; /* ✅ Consistent look */
+  padding: 1px 10px;
+
+}
+
+.lector-dashboard-wrapper .main-content {
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+align-items: center;
+
+}
+
+.lector-dashboard-wrapper .create-course-container {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 20vh;
+    display: flex;
+  flex-wrap: wrap;
+}
+
+.lector-dashboard-wrapper .courses-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+}
+
+.lector-dashboard-wrapper .course-box {
+  background-color: #f9b768;
+  padding: 15px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.lector-dashboard-wrapper .course-actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+    align-items: center;
+  justify-content: center;
+
+}
+
+.lector-dashboard-wrapper .btn {
+  padding: 5px 10px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.lector-dashboard-wrapper .btn.edit {
+  background-color: #0056b3;
+}
+
+.lector-dashboard-wrapper .btn.enter {
+  background-color: #d9534f;
+}
+
+.lector-dashboard-wrapper .btn.delete {
+  background-color: #333;
+}
+
+.lector-dashboard-wrapper .create-course-btn {
+  background-color: #d15656;
+}

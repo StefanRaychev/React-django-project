@@ -1,0 +1,113 @@
+/* Scoped Profile Edit Styling */
+.lector-profile-edit-wrapper {
+  background-color: #FF8C42;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.lector-profile-edit-wrapper .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.lector-profile-edit-wrapper .edit-profile-container {
+  background-color: #D9534F;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  text-align: center;
+}
+
+.lector-profile-edit-wrapper .edit-profile-container h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.lector-profile-edit-wrapper .edit-profile-container form input,
+.lector-profile-edit-wrapper .edit-profile-container form select,
+.lector-profile-edit-wrapper .edit-profile-container form textarea {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #FADBD8;
+  font-size: 16px;
+}
+
+.lector-profile-edit-wrapper .edit-profile-container form input:focus,
+.lector-profile-edit-wrapper .edit-profile-container form select:focus,
+.lector-profile-edit-wrapper .edit-profile-container form textarea:focus {
+  outline: 2px solid #FFC074;
+}
+
+.lector-profile-edit-wrapper .save-btn {
+  background-color: #FFC074;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.lector-profile-edit-wrapper .save-btn:hover {
+  background-color: #FFA549;
+}
+
+.lector-profile-edit-wrapper .delete-btn {
+  background-color: #333;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.lector-profile-edit-wrapper .delete-btn:hover {
+  background-color: #111;
+}
+
+.lector-profile-edit-wrapper .cancel-btn {
+  background-color: #777;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.lector-profile-edit-wrapper .cancel-btn:hover {
+  background-color: #555;
+}
+
+.lector-profile-edit-wrapper .error-message {
+  color: blue;
+  font-size: 14px;
+  margin-top: 5px;
+  text-align: left;
+  display: none;
+}
+
+.lector-profile-edit-wrapper .error-message.active {
+  display: block;
+}

@@ -1,0 +1,74 @@
+/* Scoped Delete Course Styling */
+.delete-course-wrapper {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #FF8C42;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.delete-course-wrapper .container {
+  background-color: #D9534F;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 400px;
+    height: 50vh;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.delete-course-wrapper .container h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.delete-course-wrapper .container p {
+  font-size: 16px;
+  color: white;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.delete-course-wrapper .container p strong {
+  color: #FFC074;
+}
+
+.delete-course-wrapper .btn {
+  display: block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  margin: 10px 0;
+  cursor: pointer;
+  box-sizing: border-box;
+  border: none;
+}
+
+.delete-course-wrapper .delete-btn {
+  background-color: #333;
+  color: white;
+}
+
+.delete-course-wrapper .delete-btn:hover {
+  background-color: #111;
+}
+
+.delete-course-wrapper .cancel-btn {
+  background-color: #FFC074;
+  color: white;
+}
+
+.delete-course-wrapper .cancel-btn:hover {
+  background-color: #FFA549;
+}
